@@ -37,16 +37,14 @@ public class main {
   }
 
   public static int[] inverterArray(int[] arr) {
-    int[] arrInvertido = new int[arr.length];
 
-    for (int i = 0; i < arr.length; i++) {
+    for (int i = 0; i < (arr.length - 1); i++) {
       int aux = arr[i];
-      arrInvertido[i] = arr[arr.length - i - 1];
-      // arr[i] = arr[arr.length - i - 1];
+      arr[i] = arr[arr.length - i - 1];
       arr[arr.length - i - 1] = aux;
     }
 
-    return arrInvertido;
+    return arr;
   }
 
 }
