@@ -14,18 +14,17 @@ public class main {
     }
 
     public static boolean verificarPalindrome(String st) {
-      boolean ePalindrome = false;
-      for (int i = 0; i < (st.length()); i++) {
-        char stInicio = st.toLowerCase().charAt(i);
-        char stFinal = st.toLowerCase().charAt(st.length() - i - 1);
+      String stLimpa = st.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
-        if (stInicio == stFinal) {
-          ePalindrome = true;
-        } else {
-          ePalindrome = false;
-        }
+      for (int i = 0; i < (stLimpa.length() / 2); i++) {
+        char stInicio = stLimpa.charAt(i);
+        char stFinal = stLimpa.charAt(stLimpa.length() - i - 1);
+
+        if (stInicio != stFinal) {
+          return false;
+        } 
       }
 
-      return ePalindrome;
+      return true;
     }
 }

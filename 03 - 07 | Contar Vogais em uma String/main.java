@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.Scanner;
 
 public class main {
@@ -15,7 +15,7 @@ public class main {
     }
 
     public static int countVowel(String st) {
-      List<Character> vowels = new ArrayList<>(); 
+      Set<Character> vowels = new HashSet<>(); 
       vowels.add('a');
       vowels.add('e');
       vowels.add('i');
@@ -30,7 +30,7 @@ public class main {
           count++;
         }
       }
-
+      
       return count;
     }
 }
