@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {
+public class isPalindrome {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       System.out.print("Entre com a palavra: ");
@@ -14,7 +14,7 @@ public class main {
     }
 
     public static boolean verificarPalindrome(String st) {
-      String stLimpa = st.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+      String stLimpa = st.replaceAll(" ", "").toLowerCase();
 
       for (int i = 0; i < (stLimpa.length() / 2); i++) {
         char stInicio = stLimpa.charAt(i);

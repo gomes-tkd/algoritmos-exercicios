@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {
+public class somarArray {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class main {
 
     int[] arr = lerArray(tamanho, sc);
 
-    somarArray(arr);
+    sumArray(arr);
     sc.close();
   }
 
@@ -31,7 +31,7 @@ public class main {
 
   // Chutei --> mas entendi que o valor sempre será maior que o índex atual
   // Não consegui fazer sem dois laços for
-  public static void somarArray(int[] arr) {
+  public static void sumArray(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr.length; j++) {
         int valor = 0;

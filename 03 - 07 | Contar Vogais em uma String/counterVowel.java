@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Scanner;
 
-public class main {
+public class counterVowel {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       System.out.print("Entre com a string: ");
