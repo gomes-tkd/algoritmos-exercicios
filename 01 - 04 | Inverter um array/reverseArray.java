@@ -10,6 +10,7 @@ public class reverseArray {
 
     readArray(arr, scanner);
     System.out.println("Array Original:");
+    
     printArray(arr);
 
     arr = inverterArray(arr);
