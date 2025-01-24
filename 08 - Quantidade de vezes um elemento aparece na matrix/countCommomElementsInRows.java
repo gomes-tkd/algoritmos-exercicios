@@ -24,14 +24,11 @@ public class countCommomElementsInRows {
         // System.out.println("\nElementos comuns por linha:");
         // countAndDisplayCommonElements(matrix);
 
-        
-
-
         sc.close();
   }
 
   /* REFATORADO GPT */
-  /*
+  
   public static void countAndDisplayCommonElements(int[][] matrix) {
     for (int i = 0; i < matrix.length; i++) {
         Map<Integer, Integer> frequencyMap = countFrequencies(matrix[i]);
@@ -60,9 +57,8 @@ public class countCommomElementsInRows {
           }
       }
       return hasCommonElements;
-  } */
-
-  /**/
+  }
+  
   public static void countCommonElements(int[][] mat) {
     int[] commumElements = new int[mat.length];
 
